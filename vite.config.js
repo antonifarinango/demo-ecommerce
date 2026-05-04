@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../ecommerceBaseBackendModelo2/src/main/resources/static',
+    outDir: '../../Peluqueria/ecommerceBaseBackendModelo2/src/main/resources/static',
     emptyOutDir: true,
   },
 })
