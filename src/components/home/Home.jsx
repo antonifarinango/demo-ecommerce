@@ -58,7 +58,7 @@ export default Home;
 
 
 
-/*Estilos modificados con antigravity */
+/*Nuevo estilo ecommerceRopa*/
 
 import { motion } from 'framer-motion';
 import { useDispatch, useSelector } from "react-redux";
@@ -119,21 +119,21 @@ const Home = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="group relative aspect-[3/4] overflow-hidden rounded-[50px] bg-slate-200">
-                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMVJ_bBryxscMYrYbEj-AXXwBpzYyROoM_NnkTk64hJoCRDHSoNNIRq6z4ZzUGzwYeIwenLGNTeeAutotedPOjOjHp1bNQVLFCzmb7MzWZcE92yJvJFRlI3HvNLFIi6qQ5tEpQd8Pox1Wwd7RgGHX6RcHfAZS2iAfpIV0f7NSShgr7XcXTr56cVtw8gVfTzb-hX_gLPX7q1C2WUEFVk6oFS2KCP7KWxVX8L5xw0v09A9GurPYk7ER_J7L0ShulLDBfkTC40v2LgWwl')" }}></div>
+                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('/hoddie2.png')" }}></div>
                         <div className="absolute bottom-6 left-6">
                             <h3 className="text-white text-2xl font-black tracking-tighter uppercase">Oversized</h3>
                         </div>
                         <Link to="/products" className="absolute inset-0"></Link>
                     </div>
                     <div className="group relative aspect-[3/4] overflow-hidden rounded-[50px] bg-slate-200">
-                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn5QQ0X39Ef8e9pjqA4js6ak_RwutVQsAhBYMoE1iedT7BRlkqPJcdqIiDgkQtAEZHbWvpdzbLu25j3yJpAGTWoiwyQ_KqPgOr0WedxXm4A-UHbJu3lTW1mCauoMwVJyEbBS1UZY06fHYBqnNDzJXWahgM6yU7Zhimqeu36k4zhiMJbymc7uWp9d5ZsMN3aA-96svZiyDYfCHdSA6r9bR130KyarWkUQ_uZ_IH16IrD1-6yLm0xU8h3rYrPoSg1M604no0oUegoCMy')" }}></div>
+                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('/pantalon1.png')" }}></div>
                         <div className="absolute bottom-6 left-6">
                             <h3 className="text-white text-2xl font-black tracking-tighter uppercase">Denim</h3>
                         </div>
                         <Link to="/products" className="absolute inset-0"></Link>
                     </div>
                     <div className="group relative aspect-[3/4] overflow-hidden rounded-[50px] bg-slate-200">
-                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHWqKoaYXUCWTLHpHrWwCPH4cwtlzvSjZObWagoG84Nz4fndmLgBw8GHJERV6X0K0V-PP5B3s2k18AiJq4ItajPXRTvPsniFytmbwnc-XeKBfFaFi1EvcuIRLP4YaVsH0wYinsR6a2XB0o_6R5JR0qesqK6zLKr4L3Dyr4_yFNfhOCYkIUjNq6QeK-RwnioQIlj9AATlf2sZAXuE3mxOd7FhjAfzV3FshnyZQcKD27KgpVwmR5nOx704tNfobq67mH8j61vIhLG-GT')" }}></div>
+                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('/gorras1.png ')" }}></div>
                         <div className="absolute bottom-6 left-6">
                             <h3 className="text-white text-2xl font-black tracking-tighter uppercase">Accessories</h3>
                         </div>

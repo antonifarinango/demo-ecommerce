@@ -48,7 +48,7 @@ const UserMenu = () => {
           sx: { width: 160 },
         }}
       >
-
+      {/*
         <Link to="/profile">
           <MenuItem className="flex gap-2"
             onClick={handleClose}>
@@ -68,6 +68,7 @@ const UserMenu = () => {
             </span>
           </MenuItem>
         </Link>
+        */}
 
         {(isAdmin || isSeller) && (
           <Link to={isAdmin ? "/admin" : "/admin/orders"}>

@@ -30,7 +30,6 @@ const dispatch = useDispatch();
     });
 
     const saveProductHandler = (data) => {
-        console.log(data)
         if(!update) {
             // create new product logic
             const sendData = {

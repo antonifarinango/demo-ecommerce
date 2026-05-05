@@ -155,9 +155,6 @@ Quedo atento a la confirmación 👍
             handleWhatsApp();
         }
     };
-    useEffect(() => {
-        console.log(cartConsole)
-    }, [cartConsole])
 
     newCart.totalPrice = cart?.reduce(
         (acc, cur) => acc + Number(cur?.specialPrice) * Number(cur?.quantity), 0
