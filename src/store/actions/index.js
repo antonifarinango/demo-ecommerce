@@ -509,12 +509,12 @@ export const getAllCategoriesDashboard = (queryString) => async (dispatch) => {
     });
 
     dispatch({ type: "CATEGORY_SUCCESS" });
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    console.log(error);
 
     dispatch({
       type: "IS_ERROR",
-      payload: err?.response?.data?.message || "Failed to fetch categories",
+      payload: error?.response?.data?.message || "Failed to fetch categories",
     });
   }
 };
@@ -529,15 +529,15 @@ export const createCategoryDashboardAction =
       toast.success("Category Created Successful");
       setOpen(false);
       await dispatch(getAllCategoriesDashboard());
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
       toast.error(
-        err?.response?.data?.categoryName || "Failed to create new category"
+        error?.response?.data?.categoryName || "Failed to create new category"
       );
 
       dispatch({
         type: "IS_ERROR",
-        payload: err?.response?.data?.message || "Internal Server Error",
+        payload: error?.response?.data?.message || "Internal Server Error",
       });
     }
   };
@@ -556,15 +556,15 @@ export const updateCategoryDashboardAction =
       toast.success("Category Update Successful");
       setOpen(false);
       await dispatch(getAllCategoriesDashboard());
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
       toast.error(
-        err?.response?.data?.categoryName || "Failed to update category"
+        error?.response?.data?.categoryName || "Failed to update category"
       );
 
       dispatch({
         type: "IS_ERROR",
-        payload: err?.response?.data?.message || "Internal Server Error",
+        payload: error?.response?.data?.message || "Internal Server Error",
       });
     }
   };
@@ -581,12 +581,12 @@ export const deleteCategoryDashboardAction =
       toast.success("Category Delete Successful");
       setOpen(false);
       await dispatch(getAllCategoriesDashboard());
-    } catch (err) {
-      console.log(err);
-      toast.error(err?.response?.data?.message || "Failed to delete category");
+    } catch (error) {
+      console.log(error);
+      toast.error(error?.response?.data?.message || "Failed to delete category");
       dispatch({
         type: "IS_ERROR",
-        payload: err?.response?.data?.message || "Internal Server Error",
+        payload: error?.response?.data?.message || "Internal Server Error",
       });
     }
   };
@@ -609,11 +609,11 @@ export const deleteCategoryDashboardAction =
       });
 
       dispatch({ type: "IS_SUCCESS" });
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
       dispatch({
         type: "IS_ERROR",
-        payload: err?.response?.data?.message || "Failed to fetch sellers data",
+        payload: error?.response?.data?.message || "Failed to fetch sellers data",
       });
     }
   };
@@ -627,11 +627,11 @@ export const addNewDashboardSeller =
       toast.success("Seller registered successfully!");
 
       await dispatch(getAllSellersDashboard());
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
       toast.error(
-        err?.response?.data?.message ||
-          err?.response?.data?.password ||
+        error?.response?.data?.message ||
+          error?.response?.data?.password ||
           "Internal Server Error"
       );
     } finally {
