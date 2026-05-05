@@ -4,21 +4,21 @@ import { bannerImageOne, bannerImageThree, bannerImageTwo } from "./constant";
 export const bannerLists = [
   {
     id: 1,
-    image: "../../public/s_1.webp",
+    image: "/s_1.webp",
     title: "Nueva Colección",
     subtitle: "Moda Urbana",
     description: "Descubre prendas que definen tu estilo y marcan tendencia",
   },
   {
     id: 2,
-    image: "../../public/s_2.webp",
+    image: "/s_2.webp",
     title: "Estilo Premium",
     subtitle: "Outfits Exclusivos",
     description: "Eleva tu look con diseños únicos y calidad superior",
   },
   {
     id: 3,
-    image: "../../public/s_3.webp",
+    image: "/s_3.webp",
     title: "Ofertas Especiales",
     subtitle: "Hasta -20%",
     description: "Renueva tu guardarropa con descuentos irresistibles",

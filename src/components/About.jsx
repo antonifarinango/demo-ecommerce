@@ -83,7 +83,6 @@ export default About;
 import { motion } from 'framer-motion';
 import { MdVerifiedUser, MdOutlineChat, MdOutlinePayments, MdLocalShipping } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
-import heroAbout from "../../public/s_4.webp";
 
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -107,7 +106,7 @@ export default function AboutContact() {
                         className="absolute inset-0 opacity-60 bg-cover bg-center"
                         style={{
                             backgroundImage:
-                                `url(${heroAbout})`,
+                                `url(/s_4.webp)`,
                         }}
                     />
 
