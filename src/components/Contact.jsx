@@ -10,8 +10,9 @@ const Contact = () => {
                 <h1 className="text-4xl font-bold text-center mb-6">Contáctanos</h1>
                 <p className="text-gray-600 text-center mb-4">
                     We would love to hear from you! Please fill out the form below or contact us directly
-                </p>
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit hic veritatis, quasi ratione nobis dolor voluptate id officia ipsum sed, eum, voluptates.
+                </p>
                 <form className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium text-gray-700">
